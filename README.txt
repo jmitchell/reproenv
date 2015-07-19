@@ -8,8 +8,22 @@ For now there are no plans to support customization through
 configuration. It's more important to reliably reproduce an isolated,
 standardardized working/testing environment.
 
-Note this project will evolve, so don't depend on it for fully
-consistent builds over extended periods of time.
+Reproducibility in this context doesn't mean every spawned VM will be
+the same bit-for-bit. External dependencies that aren't fixed to
+particular versions include:
+
+  - Vagrant
+  - VirtualBox
+  - VM base box
+    - https://atlas.hashicorp.com/debian/boxes/jessie64
+  - Debian packages
+    - SBCL
+    - Emacs
+  - Quicklisp
+
+Note this project and the features it provides will evolve. Don't
+depend on it for fully consistent builds over extended periods of
+time.
 
 
 Dependencies
@@ -29,4 +43,3 @@ Clone the repository:
 Then run `vagrant up` from the root directory of the
 repository. Vagrant spawns a VM and provisions it with the
 essentials. Once that's complete, login using `vagrant ssh`.
-

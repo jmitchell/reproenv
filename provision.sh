@@ -54,3 +54,5 @@ EOF
 
 install_apt_programs
 install_quicklisp
+
+ln -s /host-home/.gitconfig /home/vagrant/.gitconfig

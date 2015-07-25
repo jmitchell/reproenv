@@ -52,7 +52,14 @@ EOF
     rm -rf $temp_dir
 }
 
+function link_to_host_configs {
+    ln -s /host-home/.gitconfig /home/vagrant/.gitconfig
+
+    ln -s /host-home/.ssh/id_rsa.pub /home/vagrant/.ssh/id_rsa.pub
+    ln -s /host-home/.ssh/id_rsa /home/vagrant/.ssh/id_rsa
+}
+
 install_apt_programs
 install_quicklisp
+link_to_host_configs
 
-ln -s /host-home/.gitconfig /home/vagrant/.gitconfig

@@ -9,7 +9,7 @@ function handle_non_zero_exit {
 
 function install_apt_programs {
     sudo apt-get update
-    sudo apt-get install -y emacs sbcl sbcl-doc sbcl-source
+    sudo apt-get install -y emacs git sbcl sbcl-doc sbcl-source
 }
 
 function install_quicklisp {

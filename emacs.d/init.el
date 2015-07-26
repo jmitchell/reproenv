@@ -26,6 +26,10 @@
     (package-refresh-contents))
 
 
+;; eww
+(setq browse-url-browser-function 'eww-browse-url)
+
+
 ;; slime
 (package-install 'slime)
 (setq inferior-lisp-program "/usr/bin/sbcl")

@@ -1,3 +1,8 @@
+NB (April 2016): Tested and this still works assuming `virtualbox`,
+`virtualbox-guest-additions-iso`, and `vagrant` are installed on the
+host. However, I also tested Roswell and am satisfied with it (see
+https://github.com/roswell/roswell).
+
 reproenv
 ========
 
